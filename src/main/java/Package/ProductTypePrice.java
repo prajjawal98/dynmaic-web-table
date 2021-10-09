@@ -51,9 +51,9 @@ public class ProductTypePrice {
             }
         }
 
-        //find product whose price is greater than 800 (Process using filter)
-        System.out.println("**** Product price is > 800 using filer & lambda ****");
-        products_map.entrySet().stream().filter(e -> e.getValue() > 800).forEach(System.out::println);
+        //find product whose price is less than 800 (Process using filter)
+        System.out.println("**** Product price is < 800 using filer & lambda ****");
+        products_map.entrySet().stream().filter(e -> e.getValue() < 800).forEach(System.out::println);
 
 
     }
